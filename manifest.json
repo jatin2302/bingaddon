@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Bluee.in Launcher",
+  "description": "Launches https://www.bluee.in/ in a new tab.",
+  "version": "1.0.0",
+  "icons": {
+    "48": "icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.bing.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
